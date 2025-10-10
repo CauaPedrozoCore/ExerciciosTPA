@@ -3,7 +3,7 @@ public class Ano {
 
 	public static void main(String[] args) {
 		Scanner ler = new Scanner (System.in);
-		//declaração de variaveis
+		//declaraï¿½ï¿½o de variaveis
 		double anoatual, nascimento, idade;
 		
 		System.out.println("Digite o ano atual:");
@@ -13,11 +13,19 @@ public class Ano {
 		nascimento= ler.nextDouble();
 		
 		idade=anoatual-nascimento;
-		if (idade>=18) {
-			System.out.println("Océ é vei demais: "+idade);
+		if (idade<10) {
+			System.out.println("Voce e uma crianï¿½a? "+idade);
+		}
+		else if (idade<18) {
+			System.out.println("Vocï¿½ e adolescente "+idade);
+		}
+		else if (idade<60) {
+			System.out.println("Vocï¿½ ï¿½ Adulto ");
+		}
+		else {
+			System.out.println("voce ï¿½ Veio " +idade);
 		}
 		ler.close();
-
 	}
 
 }
